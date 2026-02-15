@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { X, Copy, Check, Code, FileJson, FileCode } from 'lucide-react';
 
 type JsonModalProps = {
@@ -85,8 +85,8 @@ export default function JsonModal({ isOpen, onClose, data }: JsonModalProps) {
                     <button
                         onClick={handleCopy}
                         className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${copied
-                                ? 'bg-green-500/20 text-green-400 border border-green-500/50'
-                                : 'bg-slate-800 text-slate-200 hover:bg-slate-700 border border-slate-700'
+                            ? 'bg-green-500/20 text-green-400 border border-green-500/50'
+                            : 'bg-slate-800 text-slate-200 hover:bg-slate-700 border border-slate-700'
                             }`}
                     >
                         {copied ? <Check size={16} /> : <Copy size={16} />}
